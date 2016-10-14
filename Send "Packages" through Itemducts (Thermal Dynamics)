@@ -1,0 +1,32 @@
+(Disclaimer: I have no idea how this whole website works (I'm lacking the vocabulary for all this). I just pressed some buttons and it opened this. I hope this is the right place to post this haha :D)
+
+Hello CoFH Team,
+
+I really love Thermal Dynamics' itemducts but there is one thing that is really bugging me:
+(I'm playing the Direwolf20 1.10.0 modpack for 1.7.10)
+
+I want to run multiple alloy smelteries (enderio) parallel to each other to smelt loads of the same alloy, but I found no good way to split stacks of items and send them in groups into multiple inventories (For example: exactly 10 redstone, 3 copper ingots and 1 silver ingot (for signalum) into multiple alloy smelters). 
+I want that -from the input chest- multiple items get sent together in small "packages" round-robin to said alloy smelters, speeding up the whole process (I hate waiting). 
+
+My idea is: Add an item (I'll call it a package. If you find a better name feel free to change it ;) ) which you can right-click to open an UI. In this UI you can specify the items and the amount to be packed into groups (For example: 10 redstone, 3 copper ingots and 1 silver ingot (for signalum)). After that you put the package into a servo. The servo will check the inventory for the specified items and only send them when all required items are present. 
+
+It would probably be neat to have package servos and package receivers.
+Package servos specify:
+1. the speed at which the packages are sent,
+2. if it should multiply the amount of items in the package (x2, x3, ..., but the ratio stays the same), if possible, 
+3. if it should ignore inventories without package receivers, prioritise inventories with package receivers or send packages                  disregarding any of that,
+4. round-robin, empty inventories first, nearest first
+
+Package receivers specify: 
+1. if the inventory has to be completely empty to accept another package, accept identical packages (until the stack-limit is reached) or    accept at any time
+2. black- or whitelist packages (to use that you put the package into the receiver. Unlike the servo, the receiver doesn't store it)
+
+The ultimate awesome would be, if it was possible to right-click an empty package onto the inventory you want it to send to. It would open that inventory instead of the normal package-UI and you can select the exact slot for every item you want to send (I have no clue if that is even remotely possible but man, that would soo cool!)
+
+I'm not sure how many uses it would have outside of smelting alloys but I would really appreciate if you could add this.
+(I'm not a native speaker and I hope it's clear what I'm trying to say. Sorry for any mistakes)
+Thank you so much for your time and keep up the good work!
+
+Greetings from Germany,
+
+Moritz
